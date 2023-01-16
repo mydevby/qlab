@@ -1,0 +1,25 @@
+@import "fonts";
+
+body {
+    background-color: #000;
+
+    span {
+        font-family: helvetica;
+        color: green; 
+    }
+
+    background: url("@img/1.jpg") 0 0 no-repeat;
+}
+
+@media (max-width: 768px) {
+    span {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    span {
+        color: white;
+    }
+}
