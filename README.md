@@ -1,2 +1,2 @@
-# qlab
+# Qlab
 Landing Page
