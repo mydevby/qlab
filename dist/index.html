@@ -37,13 +37,14 @@
 	<link rel="icon" type="image/png" sizes="192x192"  href="img/logos/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/logos/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="img/logos/favicon-96x96.png">
-	<link rel="manifest" href="manifest/manifest.json">
+	<link rel="manifest" href="files/manifest.json">
 	<meta name="msapplication-TileColor" content="#BB2649">
 	<meta name="msapplication-TileImage" content="img/logos/ms-icon-144x144.png">
 	<meta name="theme-color" content="#BB2649">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -58,7 +59,7 @@
 				<path d="M73.5 87H96.5L135.5 125H111.5L73.5 87Z" fill="#FFFFFF"/>
 			</svg>
 			<ul class="header__social-list">
-				<li class="header__social-item">
+				<li class="header__social-item" style="display: none;">
 					<a class="header__social-link" href="tel:+375259458590">
 						<svg class="header__social-img" role="img" aria-labelledby="qlabPhoneTitleID qlabPhoneDescID" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<title id="qlabPhoneTitleID">Наш номер телефона</title>
@@ -90,9 +91,13 @@
 					</a>
 				</li>
 			</ul>
-			<a class="header__order btn"><a href="#form">+ Стать клиентом</a>
+			<a class="header__phone"  href="tel:+375259458590">+375 (25) 945-85-90</a>
+			<a class="header__order btn" href="#form">+ Стать клиентом</a>
 			<button class="header__burger js-menu">
-				Меню
+				<span class="header__burger-line"></span>
+				<span class="header__burger-line"></span>
+				<span class="header__burger-line"></span>
+				<span class="header__burger-text">Меню</span>
 			</button>
 		</div>
 	</div>
@@ -365,22 +370,22 @@
 <footer class="footer">
 	<div class="container">
 		<p class="footer__copyright">«Qlab», 2011 - 2023. Все права защищены.</p>
-		<svg class="footer__belarus" role="img" aria-labelledby="belarusTitleID belarusDescID" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg class="footer__belarus" role="img" aria-labelledby="belarusTitleID belarusDescID" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<title id="belarusTitleID">Qlab.by</title>
 			<desc id="belarusDescID">Зроблена ў Беларусі</desc>
-			<path d="M500.354 476.646L500 476.293L499.646 476.646L476.646 499.646L476.293 500L476.646 500.354L499.646 523.354L500 523.707L500.354 523.354L523.354 500.354L523.707 500L523.354 499.646L500.354 476.646ZM500 440.707L559.293 500L500 559.293L440.707 500L500 440.707Z" fill="white" stroke="white"/>
-			<path d="M2.70711 500L82 420.707L161.293 500L82 579.293L2.70711 500Z" fill="white" stroke="white"/>
-			<path d="M420.707 82L500 2.70711L579.293 82L500 161.293L420.707 82Z" fill="white" stroke="white"/>
-			<path d="M709.5 259.793L520.5 448.793V270.207L709.5 81.2071V259.793Z" fill="white" stroke="white"/>
-			<path d="M290.5 259.793L479.5 448.793V270.207L290.5 81.2071V259.793Z" fill="white" stroke="white"/>
-			<path d="M270.207 479.5L81.2071 290.5L259.793 290.5L448.793 479.5L270.207 479.5Z" fill="white" stroke="white"/>
-			<path d="M729.793 479.5L918.793 290.5L740.207 290.5L551.207 479.5L729.793 479.5Z" fill="white" stroke="white"/>
-			<path d="M709.5 740.207L520.5 551.207V729.793L709.5 918.793V740.207Z" fill="white" stroke="white"/>
-			<path d="M290.5 740.207L479.5 551.207V729.793L290.5 918.793V740.207Z" fill="white" stroke="white"/>
-			<path d="M270.207 520.5L81.2071 709.5L259.793 709.5L448.793 520.5L270.207 520.5Z" fill="white" stroke="white"/>
-			<path d="M729.793 520.5L918.793 709.5L740.207 709.5L551.207 520.5L729.793 520.5Z" fill="white" stroke="white"/>
-			<path d="M838.707 500L918 420.707L997.293 500L918 579.293L838.707 500Z" fill="white" stroke="white"/>
-			<path d="M420.707 918L500 838.707L579.293 918L500 997.293L420.707 918Z" fill="white" stroke="white"/>
+			<path d="M25.0177 23.8323L25 23.8146L24.9823 23.8323L23.8323 24.9823L23.8147 25L23.8323 25.0177L24.9823 26.1677L25 26.1853L25.0177 26.1677L26.1677 25.0177L26.1854 25L26.1677 24.9823L25.0177 23.8323ZM25 22.0353L27.9647 25L25 27.9646L22.0354 25L25 22.0353Z" fill="white" stroke="white"/>
+			<path d="M0.135361 25L4.10001 21.0353L8.06466 25L4.10001 28.9646L0.135361 25Z" fill="white" stroke="white"/>
+			<path d="M21.0354 4.10002L25 0.135376L28.9647 4.10002L25 8.06467L21.0354 4.10002Z" fill="white" stroke="white"/>
+			<path d="M35.475 12.9897L26.025 22.4397V13.5104L35.475 4.06036V12.9897Z" fill="white" stroke="white"/>
+			<path d="M14.525 12.9897L23.975 22.4397V13.5104L14.525 4.06036V12.9897Z" fill="white" stroke="white"/>
+			<path d="M13.5103 23.975L4.06035 14.525H12.9896L22.4396 23.975H13.5103Z" fill="white" stroke="white"/>
+			<path d="M36.4897 23.975L45.9397 14.525H37.0103L27.5603 23.975H36.4897Z" fill="white" stroke="white"/>
+			<path d="M35.475 37.0104L26.025 27.5604V36.4897L35.475 45.9397V37.0104Z" fill="white" stroke="white"/>
+			<path d="M14.525 37.0104L23.975 27.5604V36.4897L14.525 45.9397V37.0104Z" fill="white" stroke="white"/>
+			<path d="M13.5103 26.025L4.06035 35.475H12.9896L22.4396 26.025H13.5103Z" fill="white" stroke="white"/>
+			<path d="M36.4897 26.025L45.9397 35.475H37.0103L27.5603 26.025H36.4897Z" fill="white" stroke="white"/>
+			<path d="M41.9353 25L45.9 21.0353L49.8647 25L45.9 28.9646L41.9353 25Z" fill="white" stroke="white"/>
+			<path d="M21.0354 45.9L25 41.9354L28.9647 45.9L25 49.8647L21.0354 45.9Z" fill="white" stroke="white"/>
 		</svg>
 		<p class="footer__belarus">Зроблена ў Беларусі</p>		
 	</div>

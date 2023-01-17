@@ -1,9 +1,6 @@
-html,
-body {
-    font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+@import "helpers/variables";
+@import "helpers/default";
+@import "helpers/typography";
 
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "components/header";
+@import "components/banner";

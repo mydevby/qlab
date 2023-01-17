@@ -1,0 +1,154 @@
+.header {
+	position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+	background: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: -5px 5px 10px rgb(51 51 51 / 10%);
+
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin-right: auto;
+	}
+
+	&__social-list {
+		display: flex;
+		align-items: center;
+		padding: 15px 0;
+		margin-right: 25px;
+	}
+
+	&__social-item {
+		margin-right: 15px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__social-link {
+		display: block;
+		width: 40px;
+		height: 40px;
+		transition: .3s;
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+
+	&__social-img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	&__social-text {
+		font-size: 0;
+	}
+
+	&__phone {
+		margin-right: 15px;
+		transition: .3s;
+		font-size: 1.2em;
+		font-weight: 800;
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+
+	&__order {
+		font-weight: 700;
+    	font-size: 1.2em;
+		color: $clr-main;
+		padding: 3px 20px 3px;
+		border: 2px solid transparent;
+		position: relative;
+		display: inline-block;
+		margin-right: 15px;
+		&:before,
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 0%;
+    		height: 0%;
+    		opacity: 0;
+		}
+
+		&:before {
+			top: 0;
+			right: 0;
+			border-top: 2px solid $clr-main;
+			border-left: 2px solid $clr-main;
+			transition: width 0.2s 0.5s ease-out, height 0.15s 0.35s linear, opacity 0s 0.7s;
+		}
+
+		&:after {
+			bottom: 0;
+			left: 0px;
+			border-bottom: 2px solid $clr-main;
+			border-right: 2px solid $clr-main;
+			transition: width 0.2s 0.15s linear, height 0.15s ease-in, opacity 0s 0.35s
+		}
+
+		&:hover {
+			&:before,
+			&:after {
+				width: 100%;
+				height: 100%;
+				opacity: 1;
+			}
+
+			&:before {
+				transition: width 0.2s ease-in, height 0.15s 0.2s linear, opacity 0s;
+			}
+
+			&:after {
+				transition: width 0.2s 0.35s linear, height 0.15s 0.5s ease-out, opacity 0s 0.3s;
+			}
+		}
+	}
+
+	&__burger {
+		font-size: 0;
+		width: 50px;
+		height: 50px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	&__burger-line {
+		position: absolute;
+		height: 4px;
+		background: $clr-main;
+		width: 60%;
+		left: 20%;
+		display: inline-block;
+		transform: translateY(-50%);
+
+		&:nth-child(1) {
+			top: 28%;
+		}
+
+		&:nth-child(2) {
+			top: 50%;
+		}
+
+		&:nth-child(3) {
+			top: 72%;
+		}
+	}
+}
